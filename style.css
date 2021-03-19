@@ -117,8 +117,8 @@ body {
     "introHeader introHeader introHeader introHeader introHeader introHeader introHeader introHeader"
     ". introText introText introText . introVisual introVisual introVisual";
   grid-row-gap: 5vw;
-  margin-top: 5vw;
-  margin-bottom: 5vw;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
 }
 
 .contentIntro h1 {
@@ -151,6 +151,8 @@ body {
     "agentsVisual1 agentsVisual1 agentsVisual1 agentsVisual1 agentsVisual1 . agentsText1 agentsText1 agentsText1 agentsText1"
     ". agentsText2 agentsText2 agentsText2 . agentsVisual2 agentsVisual2 agentsVisual2 agentsVisual2 agentsVisual2";
   grid-row-gap: 5vw;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
 }
 
 .contentAgents h1 {
@@ -217,6 +219,8 @@ body {
     "mapsHeader mapsHeader mapsHeader mapsHeader mapsHeader mapsHeader mapsHeader mapsHeader mapsHeader mapsHeader mapsHeader mapsHeader"
     ". mapsVisual mapsVisual mapsVisual mapsVisual mapsVisual mapsVisual . mapsText mapsText mapsText mapsText";
   grid-row-gap: 5vw;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
 }
 
 .contentMaps h1 {
@@ -256,6 +260,8 @@ body {
     "skinsHeader skinsHeader skinsHeader skinsHeader skinsHeader skinsHeader skinsHeader skinsHeader skinsHeader skinsHeader skinsHeader skinsHeader"
     ". skinsText skinsText skinsText skinsText . skinsVisual skinsVisual skinsVisual skinsVisual skinsVisual skinsVisual";
   grid-row-gap: 5vw;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
 }
 
 .contentSkins h1 {
