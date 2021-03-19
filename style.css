@@ -107,6 +107,7 @@ body {
   font-family: 'Barlow', sans-serif;
   font-weight: 700;
   font-size: 1.5vw;
+  padding-bottom: 1vw;
 }
 
 .contentIntro {
@@ -125,10 +126,10 @@ body {
   grid-area: introHeader;
 }
 
-.contentIntro p {
+.introText {
   grid-area: introText;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -189,6 +190,10 @@ body {
   align-items: center;
 }
 
+.agentsBottomText p:nth-of-type(2) {
+  padding-top: 2vw;
+}
+
 .agentsBottomText a {
   text-decoration: none;
   background-color: #ff4655;
@@ -232,10 +237,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .mapsDesc a {
+  align-self: center;
   text-decoration: none;
   background-color: #ff4655;
   color: #f3eeeb;
@@ -273,10 +278,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .skinsDesc a {
+  align-self: center;
   text-decoration: none;
   background-color: #ff4655;
   color: #f3eeeb;
