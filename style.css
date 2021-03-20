@@ -99,6 +99,7 @@ body {
   font-family: 'Barlow', sans-serif;
   font-weight: 500;
   font-size: 1.5vw;
+  line-height: 1.4em;
 }
 
 .mainContent a {
@@ -137,14 +138,17 @@ body {
   justify-content: center;
 }
 
-.contentIntro iframe {
+.introVideo {
   grid-area: introVisual;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.introVideo iframe {
   width: 30vw;
   height: calc(30vw * 0.5625);
   pointer-events: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .contentAgents {
@@ -191,7 +195,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .agentsBottomText p:nth-of-type(2) {
@@ -199,6 +202,7 @@ body {
 }
 
 .agentsBottomText a {
+  align-self: center;
   text-decoration: none;
   background-color: #ff4655;
   color: #f3eeeb;
