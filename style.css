@@ -76,7 +76,9 @@ body {
   left: 50%;
 }
 
-.mainContent {
+/* Home page */
+
+.homeMainContent {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-areas:
@@ -89,26 +91,26 @@ body {
   margin-top: 5vw;
 }
 
-.mainContent h1 {
+.homeMainContent h1 {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
   font-size: 6vw;
 }
 
-.mainContent p {
+.homeMainContent p {
   font-family: 'Barlow', sans-serif;
   font-weight: 500;
   font-size: 1.5vw;
   line-height: 1.4em;
 }
 
-.mainContent a {
+.homeMainContent a {
   font-family: 'Barlow', sans-serif;
   font-weight: 700;
   font-size: 1.75vw;
 }
 
-.mainContent h2 {
+.homeMainContent h2 {
   font-family: 'Barlow', sans-serif;
   font-weight: 700;
   font-size: 1.5vw;
@@ -357,4 +359,139 @@ body {
   justify-content: center;
   align-items: flex-end;
   margin-top: -8vw;
+}
+
+/* Agents Page */
+
+.agentsMainContent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    ". agent1Pic agent1Pic agent1Pic agent1Pic . agent1Desc agent1Desc agent1Desc agent1Desc agent1Desc ."
+    ". agent1Show agent1Show agent1Show agent1Show agent1Show agent1Show agent1Show agent1Show agent1Show agent1Show ."
+    ". agent2Pic agent2Pic agent2Pic agent2Pic . agent2Desc agent2Desc agent2Desc agent2Desc agent2Desc ."
+    ". agent3Pic agent3Pic agent3Pic agent3Pic . agent3Desc agent3Desc agent3Desc agent3Desc agent3Desc ."
+    ". agent4Pic agent4Pic agent4Pic agent4Pic . agent4Desc agent4Desc agent4Desc agent4Desc agent4Desc ."
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+  grid-row-gap: 5vw;
+  margin-top: 5vw;
+}
+
+.agentsMainContent img {
+  width: 100%;
+}
+
+.agentsMainContent h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 5vw;
+  font-weight: 600;
+}
+
+.agentsMainContent h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+.agentsMainContent h3 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  font-size: 1.5vw;
+}
+
+.agentsMainContent p {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+  font-size: 1.5vw;
+  line-height: 1.4em;
+}
+
+.agentsMainContent img:nth-of-type(1) {
+  grid-area: agent1Pic;
+}
+
+.agentBrimDesc, .agentPhoenixDesc, .agentSageDesc, .agentSovaDesc {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas:
+    "header header header header header header header header"
+    ". intro intro intro intro intro intro intro"
+    ". desc desc desc desc desc desc desc";
+}
+
+.agentBrimDesc {
+  grid-area: agent1Desc;
+}
+
+.brimHeader, .phoenixHeader, .sageHeader, .sovaHeader {
+  grid-area: header;
+}
+
+.agentBrimDesc p:nth-of-type(1), .agentPhoenixDesc p:nth-of-type(1), .agentSageDesc p:nth-of-type(1), .agentSovaDesc p:nth-of-type(1) {
+  grid-area: intro;
+}
+
+.agentBrimDesc p:nth-of-type(2), .agentPhoenixDesc p:nth-of-type(2), .agentSageDesc p:nth-of-type(2), .agentSovaDesc p:nth-of-type(2) {
+  grid-area: desc;
+}
+
+.agentsMainContent img:nth-of-type(2) {
+  grid-area: agent2Pic;
+}
+
+.agentPhoenixDesc {
+  grid-area: agent2Desc;
+}
+
+.agentsMainContent img:nth-of-type(3) {
+  grid-area: agent3Pic;
+}
+
+.agentSageDesc {
+  grid-area: agent3Desc;
+}
+
+.agentsMainContent img:nth-of-type(4) {
+  grid-area: agent4Pic;
+}
+
+.agentSovaDesc {
+  grid-area: agent4Desc;
+}
+
+.agentBrimShowcase {
+  grid-area: agent1Show;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-areas:
+    "abilities abilities abilities abilities video video video video video video"
+}
+
+.brimAbilities {
+  grid-area: abilities;
+}
+
+.brimAbilities h3 {
+  display: inline;
+}
+
+.brimAbilities img {
+  width: 1.3vw;
+}
+
+.brimAbilities p {
+  padding-bottom: 2vw;
+}
+
+.brimVideo {
+  grid-area: video;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.brimVideo iframe {
+  width: 45vw;
+  height: calc(45vw * 0.5625);
+  pointer-events: none;
 }
