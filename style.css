@@ -370,8 +370,11 @@ body {
     ". agent1Pic agent1Pic agent1Pic agent1Pic . agent1Desc agent1Desc agent1Desc agent1Desc agent1Desc ."
     ". agent1Show agent1Show agent1Show agent1Show agent1Show agent1Show agent1Show agent1Show agent1Show agent1Show ."
     ". agent2Pic agent2Pic agent2Pic agent2Pic . agent2Desc agent2Desc agent2Desc agent2Desc agent2Desc ."
+    ". agent2Show agent2Show agent2Show agent2Show agent2Show agent2Show agent2Show agent2Show agent2Show agent2Show ."
     ". agent3Pic agent3Pic agent3Pic agent3Pic . agent3Desc agent3Desc agent3Desc agent3Desc agent3Desc ."
+    ". agent3Show agent3Show agent3Show agent3Show agent3Show agent3Show agent3Show agent3Show agent3Show agent3Show ."
     ". agent4Pic agent4Pic agent4Pic agent4Pic . agent4Desc agent4Desc agent4Desc agent4Desc agent4Desc ."
+    ". agent4Show agent4Show agent4Show agent4Show agent4Show agent4Show agent4Show agent4Show agent4Show agent4Show ."
     "footer footer footer footer footer footer footer footer footer footer footer footer";
   grid-row-gap: 5vw;
   margin-top: 5vw;
@@ -421,10 +424,15 @@ body {
 
 .agentBrimDesc {
   grid-area: agent1Desc;
+  background-image: url("agentBrimBackground.png");
+  background-size: 100% 35%;
+  background-repeat: no-repeat;
 }
 
 .brimHeader, .phoenixHeader, .sageHeader, .sovaHeader {
   grid-area: header;
+  margin-left: 2vw;
+  margin-top: 0.25vw;
 }
 
 .agentBrimDesc p:nth-of-type(1), .agentPhoenixDesc p:nth-of-type(1), .agentSageDesc p:nth-of-type(1), .agentSovaDesc p:nth-of-type(1) {
@@ -441,6 +449,9 @@ body {
 
 .agentPhoenixDesc {
   grid-area: agent2Desc;
+  background-image: url("agentPhoenixBackground.png");
+  background-size: 100% 35%;
+  background-repeat: no-repeat;
 }
 
 .agentsMainContent img:nth-of-type(3) {
@@ -449,6 +460,9 @@ body {
 
 .agentSageDesc {
   grid-area: agent3Desc;
+  background-image: url("agentSageBackground.png");
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
 }
 
 .agentsMainContent img:nth-of-type(4) {
@@ -457,40 +471,60 @@ body {
 
 .agentSovaDesc {
   grid-area: agent4Desc;
+  background-image: url("agentSovaBackground.png");
+  background-size: 100% 32%;
+  background-repeat: no-repeat;
+}
+
+.agentBrimShowcase, .agentPhoenixShowcase, .agentSageShowcase, .agentSovaShowcase {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-areas:
+    "abilities abilities abilities abilities video video video video video video";
 }
 
 .agentBrimShowcase {
   grid-area: agent1Show;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-areas:
-    "abilities abilities abilities abilities video video video video video video"
 }
 
-.brimAbilities {
+.agentPhoenixShowcase {
+  grid-area: agent2Show;
+}
+
+.agentSageShowcase {
+  grid-area: agent3Show;
+}
+
+.agentSovaShowcase {
+  grid-area: agent4Show;
+}
+
+.brimAbilities, .phoenixAbilities, .sageAbilities, .sovaAbilities {
   grid-area: abilities;
 }
 
-.brimAbilities h3 {
+.brimAbilities h3, .phoenixAbilities h3, .sageAbilities h3, .sovaAbilities h3 {
   display: inline;
 }
 
-.brimAbilities img {
+.brimAbilities img, .phoenixAbilities img, .sageAbilities img, .sovaAbilities img {
   width: 1.3vw;
+  background-color: red;
+  padding: 1px;
 }
 
-.brimAbilities p {
+.brimAbilities p, .phoenixAbilities p, .sageAbilities p, .sovaAbilities p {
   padding-bottom: 2vw;
 }
 
-.brimVideo {
+.brimVideo, .phoenixVideo, .sageVideo, .sovaVideo {
   grid-area: video;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.brimVideo iframe {
+.brimVideo iframe, .phoenixVideo iframe, .sageVideo iframe, .sovaVideo iframe {
   width: 45vw;
   height: calc(45vw * 0.5625);
   pointer-events: none;
@@ -519,4 +553,8 @@ body {
 
 .mapBind img {
   width: 100%;
+}
+
+.bindMap a:nth-of-type(1) {
+  position: absolute;
 }
