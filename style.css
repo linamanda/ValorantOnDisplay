@@ -369,10 +369,13 @@ body {
   grid-template-areas:
     ". agent1Pic agent1Pic agent1Pic agent1Pic . agent1Desc agent1Desc agent1Desc agent1Desc agent1Desc ."
     ". agent1Show agent1Show agent1Show agent1Show agent1Show agent1Show agent1Show agent1Show agent1Show agent1Show ."
+    "break1 break1 break1 break1 break1 break1 break1 . . . . ."
     ". agent2Pic agent2Pic agent2Pic agent2Pic . agent2Desc agent2Desc agent2Desc agent2Desc agent2Desc ."
     ". agent2Show agent2Show agent2Show agent2Show agent2Show agent2Show agent2Show agent2Show agent2Show agent2Show ."
+    ". . . . . break2 break2 break2 break2 break2 break2 break2"
     ". agent3Pic agent3Pic agent3Pic agent3Pic . agent3Desc agent3Desc agent3Desc agent3Desc agent3Desc ."
     ". agent3Show agent3Show agent3Show agent3Show agent3Show agent3Show agent3Show agent3Show agent3Show agent3Show ."
+    "break3 break3 break3 break3 break3 break3 break3 . . . . ."
     ". agent4Pic agent4Pic agent4Pic agent4Pic . agent4Desc agent4Desc agent4Desc agent4Desc agent4Desc ."
     ". agent4Show agent4Show agent4Show agent4Show agent4Show agent4Show agent4Show agent4Show agent4Show agent4Show ."
     "footer footer footer footer footer footer footer footer footer footer footer footer";
@@ -407,6 +410,32 @@ body {
   font-weight: 500;
   font-size: 1.5vw;
   line-height: 1.4em;
+}
+
+.agentsMainContent hr:nth-of-type(1),  .agentsMainContent hr:nth-of-type(3){
+  position: relative;
+  left: 3vw;
+  margin-bottom: 1vw;
+  border-top: 2px solid #152532;
+}
+
+.agentsMainContent hr:nth-of-type(2){
+  position: relative;
+  left: -3vw;
+  margin-bottom: 1vw;
+  border-top: 2px solid #152532;
+}
+
+.agentsMainContent hr:nth-of-type(1) {
+  grid-area: break1;
+}
+
+.agentsMainContent hr:nth-of-type(2) {
+  grid-area: break2;
+}
+
+.agentsMainContent hr:nth-of-type(3) {
+  grid-area: break3;
 }
 
 .agentsMainContent img:nth-of-type(1) {
