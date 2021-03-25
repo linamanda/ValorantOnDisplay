@@ -565,7 +565,8 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-areas:
-    ". map1 map1 map1 map1 map1 map1 map1 map1 map1 map1 .";
+    ". map1 map1 map1 map1 map1 map1 map1 map1 map1 map1 ."
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
   grid-row-gap: 5vw;
   margin-top: 5vw;
 }
@@ -574,16 +575,133 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
   font-size: 6vw;
+  margin-bottom: 1vw;
+}
+
+.mapsMainContent p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1.5vw;
+  color: white;
+  position: absolute;
+}
+
+#modalCaption {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+  font-size: 1.5vw;
+  line-height: 1.4em;
+}
+
+.mapsMainContent p:hover {
+  cursor: pointer;
 }
 
 .mapBind {
   grid-area: map1;
+  position: relative;
 }
 
 .mapBind img {
   width: 100%;
 }
 
-.bindMap a:nth-of-type(1) {
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 2vw;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modalContent {
+  margin: auto;
+  display: block;
+  width: 70vw;
+}
+
+#modalCaption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  text-align: center;
+  color: #ccc;
+  padding: 1vw 0;
+}
+
+.close {
   position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#bindASite {
+  top: 47%;
+  left: 69%;
+}
+
+#bindAHeaven {
+  top: 37%;
+  left: 72%;
+}
+
+#bindABath {
+  top: 59%;
+  left: 78%;
+}
+
+#bindAShort {
+  top: 63%;
+  left: 60%;
+}
+
+#bindBSite {
+  top: 42%;
+  left: 27%;
+}
+
+#bindBHooka {
+  top: 55%;
+  left: 28%;
+}
+
+#bindBShort {
+  top: 65%;
+  left: 37%;
+}
+
+#bindBLong {
+  top: 65%;
+  left: 15%;
+}
+
+#bindBLobby {
+  top: 78%;
+  left: 20%;
+}
+
+#bindBGarden {
+  top: 57%;
+  left: 19%;
+}
+
+#bindBElbow {
+  top: 46%;
+  left: 13%;
 }

@@ -28,20 +28,50 @@
       <div class="mapBind">
         <h1>BIND</h1>
         <img src="mapBindOverhead.jpg" alt="Bind OVerhead">
-        <div class="bindMap">
-          <p>A Site</p>
-          <p>A Heaven</p>
-          <p>A Bath</p>
-          <p>A Short</p>
-          <p>B Site</p>
-          <p>B Hooka</p>
-          <p>B Short</p>
-          <p>B Long</p>
-          <p>B Lobby</p>
-          <p>B Garden</p>
-          <p>B Elbow</p>
-        </div>
+        <p id="bindASite" onclick="displayModal(this.id)">A Site</p>
+        <p id="bindAHeaven" onclick="displayModal(this.id)">A Heaven</p>
+        <p id="bindABath" onclick="displayModal(this.id)">A Bath</p>
+        <p id="bindAShort" onclick="displayModal(this.id)">A Short</p>
+        <p id="bindBSite" onclick="displayModal(this.id)">B Site</p>
+        <p id="bindBHooka" onclick="displayModal(this.id)">B Hooka</p>
+        <p id="bindBShort" onclick="displayModal(this.id)">B Short</p>
+        <p id="bindBLong" onclick="displayModal(this.id)">B Long</p>
+        <p id="bindBLobby" onclick="displayModal(this.id)">B Lobby</p>
+        <p id="bindBGarden" onclick="displayModal(this.id)">B Garden</p>
+        <p id="bindBElbow" onclick="displayModal(this.id)">B Elbow</p>
+      </div>
+
+      <div class="modal" id="modal">
+        <span class="close">&times;</span>
+        <div id="modalCaption"></div>
+        <img class="modalContent" id="modalImg">
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="logo">
+        <img src="logoImage.png" alt="V">
+        <img src="logoText.png" alt="VALORANT">
       </div>
     </div>
   </body>
+
+  <script type="text/javascript">
+    var modal = document.getElementById("modal");
+    var modalImg = document.getElementById("modalImg");
+    var captionText = document.getElementById("modalCaption");
+
+    function displayModal(pID) {
+      modal.style.display = "block";
+      modalImg.src = pID + ".png";
+      captionText.innerHTML = document.getElementById(pID).innerHTML;
+    }
+
+    var span = document.getElementsByClassName("close")[0];
+
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+  </script>
+
 </html>
