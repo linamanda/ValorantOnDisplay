@@ -705,3 +705,52 @@ body {
   top: 46%;
   left: 13%;
 }
+
+/* Skins page */
+
+.skinsMainContent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    ". skin1 skin1 skin1 skin1 skin1 skin1 skin1 skin1 skin1 skin1 ."
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+  grid-row-gap: 5vw;
+  margin-top: 5vw;
+}
+
+.skinsMainContent h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 6vw;
+  margin-bottom: 1vw;
+}
+
+.skinsPrime2 {
+  grid-area: skin1;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-areas:
+    "header header header header header header header header header header"
+    "video video video video video video video video video video";
+}
+
+.skinsPrime2 h1 {
+  grid-area: header;
+}
+
+.prime2Video {
+  grid-area: video;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prime2Video iframe {
+  width: 80vw;
+  height: calc(80vw * 0.5625);
+  pointer-events: none;
+}
+
+.footer {
+  grid-area: footer;
+}
