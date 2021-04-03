@@ -21,7 +21,7 @@ body {
 
 .navBar img {
   height: 2.5vw;
-  padding: 0.75vw 0.5vw 0.75vw 0.5vw;
+  padding: 0.75vw 0.5vw 0.75vw 1.5vw;
 }
 
 .navBar a:not(:first-child) {
@@ -314,6 +314,9 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 3vw;
+  position: relative;
+  bottom: 0;
+  left: 0;
 }
 
 .footer img {
@@ -697,13 +700,45 @@ body {
 }
 
 #bindBGarden {
-  top: 57%;
+  top: 58%;
   left: 19%;
 }
 
 #bindBElbow {
   top: 46%;
   left: 13%;
+}
+
+@media only screen and (max-width: 576px) {
+  .navBar img {
+    height: 5vw;
+  }
+
+  .navBar a:not(:first-child) {
+    font-size: 4vw;
+  }
+
+  .mapsHero {
+    height: 100vw;
+    background-position: center;
+  }
+
+  .modal {
+    padding-top: 20vh;
+  }
+
+  .modalContent {
+    width: 90vw;
+    margin: 3.5vw;
+  }
+
+  #modalCaption {
+    font-size: 3vw;
+  }
+
+  .mapsMainContent p {
+    font-size: 1.75vw;
+  }
 }
 
 /* Skins page */
